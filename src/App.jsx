@@ -14,8 +14,11 @@ const App = () => {
       <Routes>
         <Route path="/" element={
           <>
+            <h2>Conoce nuestro proceso</h2>
             <Topics />
+            <h2>Registrate y no te pierdas del webinar</h2>
             <Form />
+            <h2>Mira el paso a paso sobre cómo se hizo esta web</h2>
             <Tutorials />
           </>
         } />

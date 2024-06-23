@@ -1,11 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-
-const topics = [
-  { id: 1, title: 'Tema 1', description: 'Descripción del Tema 1' },
-  { id: 2, title: 'Tema 2', description: 'Descripción del Tema 2' },
-  { id: 3, title: 'Tema 3', description: 'Descripción del Tema 3' },
-];
+import { topics } from '../topicsData';
 
 const TopicDetail = () => {
   const { id } = useParams();
@@ -17,10 +12,10 @@ const TopicDetail = () => {
 
   return (
     <section className="section">
-      <h2>{topic.title}</h2>
-      <p>{topic.description}</p>
+      <div dangerouslySetInnerHTML={{ __html: topic.longDescription }} />
     </section>
   );
 };
 
 export default TopicDetail;
+

@@ -1,11 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-const topics = [
-  { id: 1, title: 'Tema 1', image: 'https://via.placeholder.com/200', description: 'Descripción del Tema 1' },
-  { id: 2, title: 'Tema 2', image: 'https://via.placeholder.com/200', description: 'Descripción del Tema 2' },
-  { id: 3, title: 'Tema 3', image: 'https://via.placeholder.com/200', description: 'Descripción del Tema 3' },
-];
+import { topics } from '../topicsData';
 
 const Topics = () => {
   return (
@@ -15,6 +10,7 @@ const Topics = () => {
           <img src={topic.image} alt={topic.title} />
           <div className="topic-title">
             <h3>{topic.title}</h3>
+            <p>{topic.description}</p>
           </div>
         </Link>
       ))}
