@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const topics = [
+const tutorials = [
   { id: 1, title: 'Tema 1', image: 'https://via.placeholder.com/200', description: 'Descripción del Tema 1' },
   { id: 2, title: 'Tema 2', image: 'https://via.placeholder.com/200', description: 'Descripción del Tema 2' },
   { id: 3, title: 'Tema 3', image: 'https://via.placeholder.com/200', description: 'Descripción del Tema 3' },
 ];
 
-const Topics = () => {
+const Tutorials = () => {
   return (
-    <section className="section topics">
-      {topics.map(topic => (
-        <Link to={`/topic/${topic.id}`} key={topic.id} className="topic">
-          <img src={topic.image} alt={topic.title} />
-          <div className="topic-title">
-            <h3>{topic.title}</h3>
+    <section className="section tutorials">
+      {tutorials.map(tutorial => (
+        <Link to={`/tutorial/${tutorial.id}`} key={tutorial.id} className="tutorial">
+          <img src={tutorial.image} alt={tutorial.title} />
+          <div className="tutorial-title">
+            <h3>{tutorial.title}</h3>
           </div>
         </Link>
       ))}
@@ -22,4 +22,4 @@ const Topics = () => {
   );
 };
 
-export default Topics;
+export default Tutorials;
