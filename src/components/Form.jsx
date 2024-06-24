@@ -19,7 +19,7 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/email/send', {
+      const response = await fetch('https://webinar-api-tota.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
