@@ -1,2 +1,6 @@
-# WEB DE REGISTRO PARA EL WEBINAR
+# Web de registro para el Webinar
+
+## Para ejecutar 
+
+npm run dev
 
